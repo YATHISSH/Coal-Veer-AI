@@ -1,0 +1,858 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank
+  - ask_bot
+  - bot_challenge
+  - general_ques_coal
+  - first_act
+  - latest_rule
+  - acts
+  - rules
+  - regulations
+  - mines_act_1952
+  - mines_and_minerals_act_mmdr_1957
+  - coal_mines_act_special_provision_2015
+  - indian_explosives_act_1884
+  - coal_bearing_areas_1957_cba
+  - mine_rules_1955
+  - mine_rescue_rules_1985
+  - mines_vocational_training_rules_1966
+  - mine_creche_rules_1966
+  - colliery_control_order_2000
+  - colliery_control_rules_2004
+  - the_explosives_rules_2008
+  - coal_mine_regulations_2017
+  - metalliferous_mines_regulation_1961
+  - oil_mines_regulations_2017
+  - 1957_acts
+  - 1966_rules
+  - 2017_regulations
+  - mines_act_1952_more_info
+  - give_more_info
+  - auction_methodology
+  - revenue_share_and_incentives
+  - upfront_amount
+  - coal_utilization_and_flexibility
+  - empowered_committee
+  - relinquishment_and_conditions
+  - limits_and_modifications
+  - national_coal_index
+  - operational_aspects_and_tenure
+  - penal_acts
+  - mines_act_key_features
+  - mines_act_why_implemented
+  - mines_act_who_implemented
+  - rules_under_mines_act
+  - reg_under_mines_act
+  - mmdr_key_features
+  - rules_under_mmdr_act
+  - metalliferous_mine_reg_purposes
+  - mine_rules_key_objectives
+  - mine_rules_why_implemented
+  - coal_mines_special_provision_key_objectives
+  - colliery_control_order_key_features
+  - mine_regulations_key_features
+  - mineral_concession_amendment_rules_2022
+  - mineral_concession_amendment_rules_key_provisions
+  - mineral_laws_amendment_act_2020
+  - mineral_laws_amendment_act_key_features
+  - mineral_laws_amendment_ordinance_2020
+  - mineral_laws_amendment_ordinance_key_points
+  - coal_mines_provident_fund_miscellaneous_provisions_act_1948
+  - coal_grading_board_repeal_act_1959
+  - coal_grading_board_repeal_act_key_provisions
+  - minerals_evidence_of_mineral_contents_rules_2015
+  - national_mineral_exploration_trust_rules_2015
+  - mineral_auction_amendment_rule_2017
+  - mineral_auction_amendment_rule_2020
+  - mineral_conservation_and_development_amendment_rules_2019
+  - minerals_other_than_atomic_hydro_carbon_rules_2020
+  - minerals_other_than_atomic_hydro_carbon_rules_2amendment_2021
+  - minerals_other_than_atomic_hydro_carbon_rules_3amendment_2021
+  - updated_minerals_evidence_of_mineral_contents_amendment_rules_2021
+  - rules_under_cba
+  - cba_acquisition_development_act
+  - coal_india_regulation_of_transfers_validation
+  - fiery_seam
+  - documents_for_mining_lease
+
+responses: 
+    utter_default:
+      - text: I'm sorry, I am unable to understand your query,Please ask Questions related to Mining Acts or try asking in a different way!
+      - text: Ooops Sorry...! I can't Understand,come up again.
+      - text: I apologize... If there's anything specific you'd like to know about mining acts, rules and regulations, feel free to let me know! I'm here to help.
+
+    utter_greet:
+      - text: |
+          "Hello! I am Coal Veer, here to assist you with information related to the acts, rules and regulations of the mining sector in India"
+          ^[buttons:The Mines Act, MMDR Act, Coal Mines Special Provision Act, Indian Explosives Act, Coal Bearing Areas Act, Mine Rules 1955, Mine Rescue Rules, Mine Creche Rules, Colliery Control Order, Explosives Rules, Coal Mine Regulations, Metalliferous Mines Regulations, Oil Mines Regulations]^
+      - text: |
+          "Hi, I am Coal Veer, you can inquire about the acts, rules and regulations related to mining in india"
+          ^[buttons:The Mines act, MMDR Act, Coal Mines Special Provision Act, Indian Explosives Act, Coal Bearing Areas Act, Mine Rules 1955, Mine Rescue Rules, Mine Creche Rules, Colliery Control Order, Explosives Rules, Coal Mine Regulations, Metalliferous Mines Regulations, Oil Mines Regulations]^
+
+    utter_goodbye:
+      - text: "Goodbye! I'll be happy to assist, feel free to ask more questions."
+
+    utter_thank:
+      - text: |
+          You are welcome! Feel free to ask any more questions, I am here to help you.
+          ^[Mining acts, Mining rules, Mining Regulations]^
+
+    utter_ask_bot:
+      - text: "Thank you for asking, but I am just an AI chatbot created for answering queries related to mining acts, rules and regulations of India."
+      - text: "Thanks for asking, I am just an AI chatbot built for answering queries and providing information related to mining acts, rules and regulations of India."
+
+    utter_bot_challenge:
+      - text: "I'm just a program so i don't have feelings, but I'm here and ready to assist you with the information about the mining acts, rules and regulations. Feel free to ask."
+
+    utter_general_ques_coal:
+      - text: |
+          Coal is a combustible black or brownish-black sedimentary rock, formed as rock strata called coal seams. Coal is mostly carbon with variable amounts of other elements, chiefly hydrogen, sulfur, oxygen, and nitrogen. Coal is a type of fossil fuel, formed when dead plant matter decays into peat and is converted into coal by the heat and pressure of deep burial over millions of years.
+
+    utter_first_act:
+      - text: |
+          The disaster hastened the process of formulation of safety laws and the first Mines Act was enacted in 1901. With further experience, this Act was superseded by the Indian Mines Act, 1923, which was again replaced by the present Mines Act, 1952. This Act came into force on the 1st of July 1952.
+          ^[buttons:The Mines Act]^
+
+    utter_latest_rule:
+      - text: |
+          The Government of India, exercising the powers conferred by the Coal Mines (Special Provisions) Act, 2015, has introduced amendments to the Coal Mines (Special Provisions) Rules, 2014. These amendments, known as the Coal Mines (Special Provisions) (Amendment) Rules, 2023, have been formulated in response to the draft rules published earlier. The draft rules were made public through a notification in the Gazette of India, Extraordinary, on January 24, 2023, inviting objections and suggestions from the public within a stipulated period of thirty days.
+
+          Having considered the objections and suggestions received from the public, the Central Government has now officially enacted the amended rules. The key provisions of the amendment are outlined below:
+
+          Title and Commencement:
+            The rules are titled the "Coal Mines (Special Provisions) (Amendment) Rules, 2023" and came into effect on the date of their publication in the Official Gazette.
+
+          Amendment to Rule 10:
+            Rule 10 of the Coal Mines (Special Provisions) Rules, 2014 has been amended, specifically focusing on sub-rule (4), clause (c), sub-clause (iii).
+            In sub-clause (iii) of clause (c) of sub-rule (4) of Rule 10, the phrase "bid security in the form of bank guarantee" has been replaced with "provide bid security."
+            This amendment, signed by M. Nagaraju, Additional Secretary, and bearing the file number F. No. CBA2-13011/1/2020-CBA2/P&S-II, introduces changes to the bid security requirements outlined in the Coal Mines (Special Provisions) Rules, 2014. It aims to streamline and enhance the provisions related to bid security in the process of allocating coal mines.
+
+          It is important to note that the principal rules, i.e., the Coal Mines (Special Provisions) Rules, 2014, were initially published on December 11, 2014, through Gazette notification number G.S.R. 883(E). The last amendment to these rules was made on May 29, 2020, through Gazette notification number G.S.R 332(E).
+              
+    utter_acts:
+      - text: |
+          The acts related to mining in india are as follows:
+            1.Mines and Minerals (Development and Regulation) Act, 1957 (MMDR Act): This is the principal legislation governing the mining sector in India. It provides for the regulation of mines and the development of minerals.
+            2.Coal Mines (Special Provisions) Act, 2015: Enacted to bring transparency and accountability in the allocation of coal blocks and to ensure the continuity of coal production in the country.
+            3.Forest (Conservation) Act, 1980: If mining activities involve forest areas, this act comes into play. It regulates diversion of forest land for non-forest purposes, including mining.
+            4.Coal Bearing Areas (Acquisition and Development) Act, 1957:Facilitates the acquisition and development of land for coal mining purposes.
+            5.Indian Explosives Act, 1884:Regulates the manufacture, possession, use, sale, transport, and import of explosives in India.
+            6.The Coal India (Regulation of Transfers and Validation) Act, 2000
+            7.The Coal Grading Board (Repeal) Act, 1959
+            8.The Coal Mines Provident Fund and Miscellaneous Provisions Act, 1948
+            9.The Coal Mines (Conservation and Development) Act, 1974
+            10.The Mineral Laws (AMENDMENT) ACT, 2020
+
+          Additionally, state governments may have their own regulations governing mining activities within their jurisdictions.
+          ^[buttons:Mines and Minerals (Development and Regulation) Act 1957, Coal Mines (Special Provisions) Act 2015, Indian Explosives Act 1884, The Coal Grading Board (Repeal) Act 1959, The Coal Mines Provident Fund and Miscellaneous Provisions Act 1948, The Mineral Laws (AMENDMENT) ACT, 2020]^
+
+    utter_rules:
+      - text: |
+          Certainly, here is a list of some important rules related to mining in India:
+            1. The mines Rules ,1955
+            2. Mine Vocational training rules, 1966
+            3. Mine Rescue Rules ,1985.
+            4. Mine Creche Rules ,1966
+            5. The Explosive Rules, 2008.
+            6. Colliery Control Rules, 2004
+            7. Payment of wages (Mines) Rules, 1956.
+            8. Colliery control order 2000
+            9. Mineral Concession (Amendment) Rules, 2022
+            10.Coal Blocks Allocation Rules, 2017
+          ^[buttons:Mines Rules 1955, Mine Vocational Training Rule 1966, Mines Rescue Rules 1985, Mines Creche Rules 1966, The Explosive Rules 2008, Colliery Control Rules 2004, Colliery Control Order 2000, Mineral Concession (Amendment) Rules 2022]^
+
+    utter_regulations:
+      - text: |
+          Certainly, here is a list of some important regulations related to mining and related activities in India:
+            1.The Coal Mines Regulations, 2017
+            2.The Metalliferous Mines Regulation, 1961
+            3.The Oil Mines Regulations, 2017
+          ^[buttons:Coal Mines Regulation 2017, Metalliferous Mines Regulation 1961, The Oil Mines Regulation 2017]^
+
+    utter_mines_act_1952:
+      - text: |
+          The Mines Act, 1952 is a comprehensive legislation enacted by the Parliament of India to regulate labor and safety in mines across the country. It aims to ensure the welfare, health, and safety of workers employed in mining operations. The Act covers various aspects of mining operations, including working hours, safety provisions, medical examinations, the employment of minors and women, and the authority of inspectors and committees in enforcing compliance and investigating accidents and diseases in mines. It also outlines the responsibilities of mine owners, agents, and managers in ensuring compliance with its provisions and the safety and well-being of workers. Additionally, the Act provides for the appointment of Courts of Inquiry, the power to exempt from the operation of the Act, and the application of certain provisions of the Factories Act, 1948 to mines. The Act also specifies penalties for contraventions and provides protection for actions taken in good faith. Overall, the Mines Act, 1952 serves as a crucial framework for regulating labor and safety in the mining industry, ensuring the protection of workers and the prevention of accidents and occupational hazards.
+          ^[buttons:Key features of Mines Act, Why Mines Act was implemented, Who implemented Mines Act, Rules under The Mines Act 1952, Regulations under The Mines Act 1952]^
+
+    utter_mines_and_minerals_act_mmdr_1957:
+      - text: |
+          The MMDR Act refers to the Mines and Minerals (Development and Regulation) Act, 1957, which is an important piece of legislation in India governing the regulation and development of minerals in the country. The primary objective of the MMRD Act is to regulate the mining sector and ensure the systematic exploration, exploitation, and development of minerals.
+          ^[buttons:Key features of MMDR Act, Rules under MMDR Act]^
+      
+    utter_coal_mines_act_special_provision_2015:
+      - text: |
+          The Coal Mines (Special Provisions) Act, 2015 was enacted to address the allocation of coal mines and the transfer of rights to successful bidders and allottees. The Act was necessitated by a Supreme Court judgment canceling coal block allocations and directing the Central Government to take immediate action to implement the order. The Act aims to ensure continuity in coal mining operations, promote optimal utilization of coal resources, and minimize the impact on vital sectors such as steel, cement, and power utilities.
+          ^[buttons:Objectives of Coal Mines Special Provisions Act]^
+
+    utter_indian_explosives_act_1884:
+      - text: |
+          The Explosives Act of 1884 in India regulates the manufacture, possession, use, sale, transport, import, and export of explosives. It applies to the entire country and covers a wide range of explosives, including gunpowder, nitroglycerine, and various other substances used for practical or pyrotechnic effects. The Act empowers the Central Government to make rules for licensing, fees, and other aspects related to the handling of explosives. It also includes provisions for the prohibition of specially dangerous explosives, the exemption of certain explosives or persons from the rules, and the extension of the definition of "explosive" to other dangerous substances.
+          
+          For the mining sector, the Act is particularly relevant in regulating the use, possession, and transport of explosives. It outlines the licensing process, fees, and conditions for the manufacture and use of explosives in mining operations. Additionally, the Act includes provisions for inquiries into accidents, forfeiture of explosives, and the power to arrest without a warrant in cases of dangerous offenses related to explosives.
+          
+          Overall, the Explosives Act of 1884 plays a crucial role in ensuring the safe and regulated handling of explosives in the mining sector in India, with a strong emphasis on public safety and accountability.
+
+    utter_coal_bearing_areas_1957_cba:
+      - text: |
+          The Coal Bearing Areas (Acquisition and Development) Act, 1957 (20 of 1957) provide for the acquisition of land containing or likely to contain coal deposits and for matters connected therewith. Under the provisions of this Act, the land is acquired for Government Companies only for coal mining and activities strictly incidental to mining purposes. For other requirements, like permanent infrastructure, offices, residence etc. the land is acquired under L.A. Act, 1894. Mining rights and surface rights of a single patch of land may not be acquired under different Acts.
+            -> Under the provision of the said Act, initially Government declares its intention to do exploration/ prospecting through a notification under Section 4(1). The validity period of notification under Section 4(1) is for two years, which can be extended by one more year through a separate notification.
+            -> Subsequently on completion of prospecting, by notification under Section 7(1) of the CBA Act, the Government declares its intention to acquire the land. The validity of notification under 7(1) is three years.
+            -> After the notification is issued under Section 7(1), Ministry invites objections, if any, from private land owners/ State Governments. On the disposal of objections, if any, filed by interested persons (land owners), by the Coal Controller's Office, the Government issues notification under Section 9(1) of the CBA Act for acquiring the land. Rights and titles of the land are transferred to Coal PSUs / Govt. Company by notification under Section 11(1) of the CBA (A&D) Act, 1957.
+          ^[buttons:Rules under Coal Bearing Areas]^
+
+    utter_mine_rules_1955:
+      - text: |
+          The Mines Rules, 1955, issued by the Ministry of Labour, outline regulations for mines in India. The rules cover various aspects such as preliminary definitions, committees, court of inquiry, certifying surgeons, medical examination, workmen's inspector, safety committee, health and sanitation provisions, employment of persons, leave with wages, overtime, and welfare amenities.
+          
+          The rules require the maintenance of records for leave with wages, the exhibition of information regarding leave with wages for employees, and the payment of leave wages to legal heirs or nominees in case of an employee's demise. They also mandate the maintenance of an overtime register and the payment of overtime at the end of each wage period. Additionally, the rules specify the provision of shelters at or near loading wharves, opencast workings, workshops, and mine entrances where 25 or more individuals are employed.
+          ^[buttons:Key objective of Mine Rules,Why Mines Rules was implemented]^
+
+    utter_mine_rescue_rules_1985:
+      - text: |
+          The Mines Rescue Rules, 1985, outlined in the content you provided, were established under the Mines Act, 1952, in India. These rules are designed to regulate and provide guidelines for mine rescue operations, particularly in below-ground mines. The rules cover various aspects, including definitions of key terms, the application of the rules, and the commencement date.
+          
+          Overall, the Mines Rescue Rules, 1985, are a set of regulations ensuring the preparedness and effective functioning of mine rescue operations in below-ground mines, emphasizing training, certification, and the establishment of rescue facilities. These rules play a crucial role in enhancing safety measures and emergency response capabilities within the mining industry.
+
+    utter_mines_vocational_training_rules_1966:
+      - text: |
+          Training is an important aspect of life. Most of the workmen employed in mining operations are come from less educational back ground. To inculcate the safe aspects in mine workings, vocational training is a must. Mines Vocational Training Rules, 1966 shall apply to every mine of whatever description to which the Mines Act, 1952 applies. These Mines Vocational Training Rules framed under Section 58 of the Mines Act, 1952 and published in Gazette of India in Part II Section 3 sub-section-1 dated 02.04.1966 under notification No. G.S.R. 473.
+          
+          Vocational Training Rules 1966 is framed to improve the safety standards in mines. Full day release system is enforced by DGMS to make the training more effective. With the latest recommendation, the Front Line supervisors and Official of the mine also need to undergo training.
+
+    utter_mine_creche_rules_1966:
+      - text: |
+          The mine crèche rules specify the provisions and regulations for crèches in mines. They cover aspects such as the appointment of an officer-in-charge, provision of staff, maintenance of cleanliness and hygiene, medical examination of children, equipment and medicines required, and inspection procedures.
+          The requirement for a crèche-in-charge who has undergone training as a crèche nurse, the authorization for temporary replacement of the crèche-in-charge in case of absence, and the responsibility of the crèche-in-charge to maintain cleanliness and ensure proper care of children and nursing mothers.
+
+    utter_colliery_control_order_2000:
+      - text: |
+          The Colliery Control Order, 2000, is very similar to Colliery Control Rules, 2004 which is issued under the Essential Commodities Act, 1955, provides the Central Government with authority to regulate various aspects of coal-related activities in India. Effectively implemented from January 1, 2000, it supersedes the earlier Colliery Control Order of 1945, except for actions taken prior to the supersession.
+            -> The order commences with the definition of key terms, ensuring clear and consistent interpretation. "Coal," for instance, is expansively defined to include various forms of carbonaceous matter, and even coke. The term "Colliery" encompasses mines or open workings focused on coal extraction, including facilities for coke production or coal washing.
+            -> A notable aspect of the order involves the categorization of coal. The Central Government holds the authority to prescribe classes, grades, and sizes of coal through official notifications, accompanied by specifications for each category. The subsequent procedure for categorization involves the Coal Controller, who establishes methodologies for sampling and analyzing coal to declare and maintain grades. Colliery owners play a crucial role in this process, declaring coal classes, grades, or sizes according to specified procedures. In case of discrepancies, owners are obligated to revise grades as directed by the Coal Controller.
+          ^[buttons:Key features of Colliery Control Order]^
+
+    utter_colliery_control_rules_2004:
+      - text: |
+          The Colliery Control Rules, 2004, is very similar to Colliery Control Order, 2000 which is issued under the Essential Commodities Act, 1955, provides the Central Government with authority to regulate various aspects of coal-related activities in India. Effectively implemented from January 1, 2000, it supersedes the earlier Colliery Control Order of 1945, except for actions taken prior to the supersession.
+            -> The order commences with the definition of key terms, ensuring clear and consistent interpretation. "Coal," for instance, is expansively defined to include various forms of carbonaceous matter, and even coke. The term "Colliery" encompasses mines or open workings focused on coal extraction, including facilities for coke production or coal washing.
+            -> A notable aspect of the order involves the categorization of coal. The Central Government holds the authority to prescribe classes, grades, and sizes of coal through official notifications, accompanied by specifications for each category. The subsequent procedure for categorization involves the Coal Controller, who establishes methodologies for sampling and analyzing coal to declare and maintain grades. Colliery owners play a crucial role in this process, declaring coal classes, grades, or sizes according to specified procedures. In case of discrepancies, owners are obligated to revise grades as directed by the Coal Controller.
+    
+    utter_the_explosives_rules_2008:
+      - text: |
+           The Explosives Rules, 2008, established under the Explosives Act, 1884, provide comprehensive regulations for the manufacture, storage, transportation, and use of explosives in India. Published on December 29, 2008, these rules supersede the Explosives Rules of 1983. The rules cover various aspects, including definitions, classifications of explosives, licensing authorities, storage facilities (magazines), and safety measures.
+
+    utter_coal_mine_regulations_2017:
+      - text: |
+          The Mines Regulations of 2017 are framed by the Central Government in exercise of the powers conferred by section 57 of the Mines Act, 1952 (35 of 1952). These regulations, which supersede the Coal Mines Regulations of 1957, have been formulated based on the recommendations of a Committee constituted under section 12 of the Mines Act. The draft of these regulations was published for public review in the Gazette of India, Extraordinary, inviting objections and suggestions from concerned parties within a stipulated period.
+            -> The regulations, effective from the date of their publication in the Official Gazette, apply comprehensively to every coal mine across India. They encompass various chapters, and the definitions provided in the regulations play a crucial role in interpreting the context of the provisions. These regulations are aimed at ensuring the safety and proper management of coal mines, covering aspects ranging from abandoned workings to the usage of explosives and machinery.
+            -> The regulations begin with a preliminary chapter, outlining the short title, commencement, application, and extent. They establish that the regulations are officially known as the Coal Mines Regulations, 2017, coming into force upon their publication in the Official Gazette. The scope of application extends to all coal mines throughout India.
+          ^[buttons:Key features of Mine Regulations]^
+
+    utter_metalliferous_mines_regulation_1961:
+      - text: |
+          The Metalliferous Mines Regulations of 1961, detailed in G.S.R. 337 dated October 18, 1960, are enacted by the Central Government in exercise of the powers granted by section 57 of the Mines Act, 1952. These regulations, which have been previously published as required by section 59(1) of the Mines Act, form a comprehensive framework governing metalliferous mines in India.
+          ^[buttons:Purpose of Metalliferous Mines Regulation]^
+
+    utter_oil_mines_regulations_2017:
+      - text: |
+          Oil Mines Regulations-1984(OMR 1984) replaces the Oil Mines Regulations-1933, with effect from October 1984 to deal with matters for the prevention of possible dangers in oil mines in India.
+          
+          OMR 1984 was Published in 1986 by the Directorate General of Mines Safety, Ministry of Labour in Dhanbad, Jharkhand.
+
+    utter_1957_acts:
+      - text: |
+          The acts implemented in the year 1957 are:
+          MMDR Act:
+            The MMDR Act refers to the Mines and Minerals (Development and Regulation) Act, 1957, which is an important piece of legislation in India governing the regulation and development of minerals in the country. The primary objective of the MMRD Act is to regulate the mining sector and ensure the systematic exploration, exploitation, and development of minerals.
+
+          CBA Act:
+            The Coal Bearing Areas (Acquisition and Development) Act, 1957 (20 of 1957) provide for the acquisition of land containing or likely to contain coal deposits and for matters connected therewith. Under the provisions of this Act, the land is acquired for Government Companies only for coal mining and activities strictly incidental to mining purposes. For other requirements, like permanent infrastructure, offices, residence etc. the land is acquired under L.A. Act, 1894. Mining rights and surface rights of a single patch of land may not be acquired under different Acts.
+              -> Under the provision of the said Act, initially Government declares its intention to do exploration/ prospecting through a notification under Section 4(1). The validity period of notification under Section 4(1) is for two years, which can be extended by one more year through a separate notification.
+              -> Subsequently on completion of prospecting, by notification under Section 7(1) of the CBA Act, the Government declares its intention to acquire the land. The validity of notification under 7(1) is three years.
+              -> After the notification is issued under Section 7(1), Ministry invites objections, if any, from private land owners/ State Governments. On the disposal of objections, if any, filed by interested persons (land owners), by the Coal Controller's Office, the Government issues notification under Section 9(1) of the CBA Act for acquiring the land. Rights and titles of the land are transferred to Coal PSUs / Govt. Company by notification under Section 11(1) of the CBA (A&D) Act, 1957.
+    
+    utter_1966_rules:
+      - text: |
+          The rules implemented in the year 1966 are:
+
+          Mines Vocational Training Rules:
+            Training is an important aspect of life. Most of the workmen employed in mining operations are come from less educational back ground. To inculcate the safe aspects in mine workings, vocational training is a must. Mines Vocational Training Rules, 1966 shall apply to every mine of whatever description to which the Mines Act, 1952 applies. These Mines Vocational Training Rules framed under Section 58 of the Mines Act, 1952 and published in Gazette of India in Part II Section 3 sub-section-1 dated 02.04.1966 under notification No. G.S.R. 473.
+            
+            Vocational Training Rules 1966 is framed to improve the safety standards in mines. Full day release system is enforced by DGMS to make the training more effective. With the latest recommendation, the Front Line supervisors and Official of the mine also need to undergo training.
+
+          The Mines Creche Rules:
+            The mine crèche rules specify the provisions and regulations for crèches in mines. They cover aspects such as the appointment of an officer-in-charge, provision of staff, maintenance of cleanliness and hygiene, medical examination of children, equipment and medicines required, and inspection procedures.
+            The requirement for a crèche-in-charge who has undergone training as a crèche nurse, the authorization for temporary replacement of the crèche-in-charge in case of absence, and the responsibility of the crèche-in-charge to maintain cleanliness and ensure proper care of children and nursing mothers.
+
+    utter_2017_regulations:
+      - text: |
+          The regulations implemented in the year 2017 are:
+
+          The Coal Mines Regulations:
+            The Mines Regulations of 2017 are framed by the Central Government in exercise of the powers conferred by section 57 of the Mines Act, 1952 (35 of 1952). These regulations, which supersede the Coal Mines Regulations of 1957, have been formulated based on the recommendations of a Committee constituted under section 12 of the Mines Act. The draft of these regulations was published for public review in the Gazette of India, Extraordinary, inviting objections and suggestions from concerned parties within a stipulated period.
+              -> The regulations, effective from the date of their publication in the Official Gazette, apply comprehensively to every coal mine across India. They encompass various chapters, and the definitions provided in the regulations play a crucial role in interpreting the context of the provisions. These regulations are aimed at ensuring the safety and proper management of coal mines, covering aspects ranging from abandoned workings to the usage of explosives and machinery.
+              -> The regulations begin with a preliminary chapter, outlining the short title, commencement, application, and extent. They establish that the regulations are officially known as the Coal Mines Regulations, 2017, coming into force upon their publication in the Official Gazette. The scope of application extends to all coal mines throughout India.
+
+          Oil Mines Regulations (OMR):
+            Oil Mines Regulations-1984(OMR 1984) replaces the Oil Mines Regulations-1933, with effect from October 1984 to deal with matters for the prevention of possible dangers in oil mines in India.
+            
+            OMR 1984 was Published in 1986 by the Directorate General of Mines Safety, Ministry of Labour in Dhanbad, Jharkhand.
+
+    utter_mines_act_1952_more_info:
+      - text: The Mines Act, 1952 applies to mines of all minerals within the country, including the offshore mines within territorial water limits. Major changes were incorporated in this Act in the years 1959 and 1983.For administering the provisions of the Indian Mines Act, 1901, the Government of India set up a "Bureau of Mines Inspection" on the 7th of January 1902 with headquarters at Calcutta.The name of the organization was changed to the Department of Mines in 1904 and its headquarters shifted to Dhanbad in 1908. On 01.01.1960, the organization was renamed as "Office of the Chief Inspector of Mines". Since 01.05.1967, the office has been redesignated as Directorate General of Mines Safety (DGMS in short).
+
+    utter_auction_methodology:
+      - text: |
+          The bid parameter for coal mine auctions is the revenue share. In the bidding process for fully explored coal blocks, companies bid on the percentage of revenue they are willing to share with the government. Bid increments are determined based on multiples, starting from 0.5% and adjusting as the bidding progresses. The floor percentage of 4% ensures a fair starting point. The auction methodology aims to encourage transparency and fair competition among bidders, providing a structured yet competitive environment.
+
+    utter_revenue_share_and_incentives:
+      - text: |
+          In coal mine auctions, the revenue share is calculated monthly based on the quoted percentage and the actual quantity of coal extracted. Incentives are provided to encourage early production and the adoption of advanced technologies like coal gasification or liquefaction. The monthly payment of revenue share ensures a steady income for the government, and incentives contribute to operational efficiency and sustainability. Penalties may apply for companies not meeting revenue share commitments.
+
+    utter_upfront_amount:
+      - text: |
+          The upfront amount in coal mine auctions is calculated as a percentage of the estimated geological reserves of the coal mine, subject to a ceiling based on the quantity of reserves. This upfront payment serves as an initial financial commitment from the bidder, reflecting the value of the coal reserves they are acquiring. The upfront amount ensures responsible bidding and resource utilization. There are provisions for adjusting upfront amounts based on market conditions.
+
+    utter_coal_utilization_and_flexibility:
+      - text: |
+          Successful bidders have flexibility in the sale and utilization of coal. Conditions govern the sale, utilization, and production flexibility, ensuring adaptability to market demands. There are provisions for adjusting revenue share in case of production shortfalls. The auction process encourages innovation in coal utilization and allows successful bidders to choose their coal utilization strategies, fostering operational efficiency.
+
+    utter_empowered_committee:
+      - text: |
+          The Empowered Committee of Secretaries plays a crucial role in overseeing coal mine auctions. It deliberates on various aspects, ensuring fairness in successive rounds of auctions. Recent modifications include proposals to increase the tenure of coking coal linkage. The committee addresses industry dynamics and regulatory considerations, contributing to the evolution of auction processes. Specific criteria guide the selection of committee members, emphasizing expertise and impartiality.
+
+    utter_relinquishment_and_conditions:
+      - text: |
+          The auction process allows for the relinquishment of coal blocks under certain conditions, with terms and conditions decided by the Ministry of Coal. Successful bidders may relinquish partially explored blocks based on their operational circumstances. Relinquishment contributes to more efficient and dynamic management of coal resources. There are no specific restrictions on companies that have relinquished coal blocks participating in future auctions.
+
+    utter_limits_and_modifications:
+      - text: |
+          There is no limit on the number of coal mines or reserves a company can acquire in the first tranche of the auction. This absence of limits encourages participation and ensures companies can acquire the necessary resources for their operations. Modifications in the approved methodology for coal mine auctions address evolving industry dynamics, fostering adaptability and efficiency.
+
+    utter_national_coal_index:
+      - text: |
+          The National Coal Index (NCI) and its sub-indices are proposed to be developed to provide a comprehensive and standardized measure of coal quality and value. The NCI will benefit industry participants by serving as a benchmark for pricing and trading coal. It contributes to transparency in the coal market and aligns with international coal quality standards.
+
+    utter_operational_aspects_and_tenure:
+      - text: |
+          The Empowered Committee of Secretaries manages key operational aspects of coal mine auctions. It contributes to successive rounds of auctions, ensuring fairness and efficiency. The proposal to increase the tenure of coking coal linkage aims to provide stability for companies relying on coking coal. Companies can provide input on operational aspects during the auction process, and the committee addresses challenges to improve auction operations.
+
+    utter_penal_acts:
+      - text: |
+          There is no specific act called the penal act but there are penalties that are defined under the Mines Act, 1952. Penalties include fines and imprisonment for offenses such as employing persons below eighteen years of age, failure to appoint a manager, failure to give notice of accidents, contravention
+          of the Act or regulations resulting in loss of life or serious bodily injury, and disobedience of other provisions. Additionally, there are enhanced penalties for subsequent convictions, and prosecutions can only be instituted at the instance of specific authorities. The Act also specifies penalties for
+          specific contraventions related to regulations and orders, falsification of records, and obstruction of authorized personnel. The penalties are aimed at ensuring compliance with safety and labor regulations in the mining industry.
+    
+    utter_mines_act_key_features:
+      - text: |
+          The Mines Act, 1952 is a significant legislation aimed at regulating labor and safety in mines across India. It encompasses various key features, including the following:
+
+            -> Regulation of Labor and Safety: The Act aims to amend and consolidate the law relating to the regulation of labor and safety in mines, ensuring the welfare, health, and safety of workers employed in mining operations.
+
+            ->Definitions: The Act provides comprehensive definitions of key terms related to mining operations, such as "mine," "minerals," "owner," "manager," "inspector," and "adult," among others.
+
+            ->Working Hours and Employment: It specifies working hours for adults, prohibits the employment of individuals below the age of eighteen in any part of a mine, and outlines provisions for weekly rest, compensatory rest, and overtime work.
+
+            ->Safety Provisions: The Act mandates the provision of drinking water, sanitation facilities, first-aid provisions, and medical examinations for individuals employed in the mines to ensure their fitness for work.
+
+            ->Appointment of Inspectors: The Act empowers the appointment of Inspectors of Mines to enforce compliance with its provisions, conduct inquiries into accidents, diseases, and working conditions, and take necessary actions to ensure the safety and well-being of mine workers.
+
+            ->Exemptions and Penalties: The Act provides for exemptions from certain provisions in cases of emergencies, accidents, or urgent work in mines, and specifies penalties for contraventions of its provisions.
+
+            ->Application to Government Mines: The Act also applies to mines belonging to the Government, ensuring that safety and labor regulations are enforced in all mining operations.
+
+          These key features of the Mines Act, 1952 demonstrate its comprehensive scope in regulating labor and safety in the mining industry, ensuring the protection of workers and the prevention of accidents and occupational hazards.
+          ^[buttons:Why Mines Act was implemented, Who implemented Mines Act]^
+
+    utter_mines_act_why_implemented:
+      - text: |
+          The Mines Act, 1952 was implemented to address the regulation of labor and safety in mines, including coal mines, across India. The Act was enacted to ensure the welfare, health, and safety of workers employed in mining operations. It covers a wide range of provisions related to safety measures, working conditions, medical facilities, sanitation,
+          and the regulation of machinery and equipment in mines. The Act also aims to provide for the appointment of Courts of Inquiry, the power of the Central Government to make rules, and the protection of actions taken in good faith. Overall, the implementation of the Mines Act, 1952 was crucial to establish comprehensive regulations and standards for
+          the mining industry, with the primary goal of safeguarding the well-being and safety of mine workers.
+          ^[buttons:Key features of Mines Act, Who implemented Mines Act]^
+
+    utter_mines_act_who_implemented:
+      - text: |
+          The Mines Act, 1952 was implemented by the Parliament of India. It was enacted to regulate labor and safety in mines, including coal mines, across the country. The Act aims to ensure the welfare, health, and safety of workers employed in mining operations and covers various provisions related to safety measures, working conditions, medical facilities,
+          sanitation, and the regulation of machinery and equipment in mines. The Act also provides for the appointment of Courts of Inquiry, the power of the Central Government to make rules, and the protection of actions taken in good faith. Overall, the implementation of the Mines Act, 1952 was crucial to establish comprehensive regulations and standards for
+          the mining industry, with the primary goal of safeguarding the well-being and safety of mine workers.
+          ^[buttons:Key features of Mines Act, Why Mines Act was implemented]^
+
+    utter_rules_under_mines_act:
+      - text: |
+          The mining rules that comes under The Mines Act, 1952 are:
+            1. Mines Rules,1955
+            2. Mine Vocational Training Rule, 1966
+            3. Mines Creche Rules, 1966
+            4. Mines Rescue Rules, 1985
+          ^[buttons:Mines Rules 1955, Mine Vocational Training Rule 1966, Mines Creche Rules 1966, Mines Rescue Rules 1985]^
+
+    utter_reg_under_mines_act:
+      - text: |
+          The regulations under The Mines Act 1952 are as follows:
+            1.Metalliferous Mines Regulation, 1961
+            2.The Oil Mines Regulation, 2017
+            3.Coal Mines Regulation, 2017
+          ^[buttons:Metalliferous Mines Regulation 1961,The Oil Mines Regulation 2017,Coal Mines Regulation 2017]^
+
+    utter_mmdr_key_features:
+      - text: |
+          The Mines and Minerals (Development and Regulation) Act, 1957 (MMDR Act) is a key legislation in India that governs the regulation and development of minerals.
+            1.Regulation of Mining: The MMDR Act is a law in India that oversees how mining is carried out.
+            2.Stopping Illegal Mining: It helps in preventing unauthorized and illegal mining activities.
+            3.Guidelines for Mining Leases: The act provides rules for obtaining permission (leases) to conduct mining operations.
+            4.Encourages Responsible Mining: It promotes mining in a planned and responsible manner, using scientific methods.
+            5.Considering the Environment: The act ensures that mining is done in a way that considers the impact on the environment. It requires studies to understand and mitigate any harm.
+          The objectives of this Act are to regulate the mining sector, ensure systematic development, conservation of minerals, and to provide for the auctioning of mining leases. The act provides for penalties in case of non-compliance with its provisions. Regulatory authorities are responsible for enforcing the act and ensuring compliance.
+
+    utter_rules_under_mmdr_act:
+      - text: |
+          The list of rules under MMDR Act are:
+            1. The Colliery Control Rules, 2004
+            2. Minerals (Evidence of Mineral Contents) Rules, 2015
+            3. National Mineral Exploration Trust Rules, 2015
+            4. The Mineral (Auction) Amendment Rules, 2020
+            5. Mineral Conservation and Development (Amendment) Rules, 2019
+            6. The Mineral (Auction) Amendment Rules, 2017
+            7. Minerals (Other than Atomic and Hydro Carbons Energy Minerals) Concession (Amendment) Rules, 2020
+          ^[buttons:Colliery Control Rules 2004, Minerals (Evidence of Mineral Contents) Rules 2015, National Mineral Exploration Trust Rules 2015, The Mineral (Auction) Amendment Rules 2020, Mineral Conservation and Development (Amendment) Rules 2019, The Mineral (Auction) Amendment Rules 2017, Minerals (Other than Atomic and Hydro Carbons Energy Minerals) Concession (Amendment) Rules 2020]^
+
+    utter_metalliferous_mine_reg_purposes:
+      - text: |
+          The Metalliferous Mines Regulations, 1961, serve several important purposes in the context of mining operations:
+
+            • Worker Safety: These regulations establish standards and guidelines to ensure the safety of workers employed in metalliferous mines. They cover various aspects such as ventilation, ground control, and protective equipment, reducing the risk of accidents and injuries.
+            • Preventing Hazards: They provide measures to prevent hazards associated with mining activities in metalliferous mines. This includes rules for handling explosives, controlling hazardous substances, and ensuring safe working conditions underground.
+            • Competency Standards: The regulations specify the qualifications and competencies required for personnel involved in critical tasks like blasting operations, ensuring that only qualified individuals are entrusted with such responsibilities.
+            • Appointment of Competent Persons: The regulations mandate the appointment of competent persons to oversee specific aspects of mining operations. These individuals are responsible for ensuring compliance with safety standards and protocols.
+            • Emergency Preparedness: They outline procedures for dealing with emergencies, including fires, explosions, or other unforeseen events. This ensures that miners are equipped to respond effectively in critical situations.
+    
+    utter_mine_rules_key_objectives:
+      - text: |
+          The key objectives of the Mines Rules, 1955, are to ensure the safety, well-being, and fair treatment of employees working in mines. These objectives are achieved through various provisions outlined in the rules, including the establishment of safety committees to discuss and recommend remedial measures against unsafe conditions,
+          the promotion of harmonious relations between management and employees, the regulation of leave with wages, the provision of welfare amenities such as housing facilities, food-stuffs, and sanitation, and the maintenance of medical standards for persons employed in mines. Additionally, the rules aim to regulate the working conditions,
+          promote productive efficiency, and provide guidance to workers in matters related to their employment. Overall, the key objectives of the Mines Rules, 1955, revolve around ensuring a safe and healthy working environment, promoting employee welfare, and facilitating productive and harmonious relations between management and employees in mines.
+          ^[buttons:Why Mine Rules was implemented]^
+    
+    utter_mine_rules_why_implemented:
+      - text: |
+          The Mines Rules, 1955, were implemented to address various aspects related to the health, safety, and welfare of persons employed in mines. The rules aim to establish and maintain harmonious relations between the management and employees, address grievances of employees, promote productive efficiency, ameliorate working conditions, and assist
+          in the formation of work and joint production committees, cooperative societies, and safety and welfare committees. Additionally, the rules seek to regulate the provision of welfare amenities such as housing facilities, food-stuffs, social and recreational facilities, and sanitation. The implementation of these rules was intended to ensure the
+          well-being and fair treatment of employees, promote a safe and healthy working environment, and provide guidance and support to workers in matters related to their employment.
+          ^[buttons:Key objectives of Mine Rules]^
+    
+    utter_coal_mines_special_provision_key_objectives:
+      - text: |
+          The Coal Mines (Special Provisions) Act, 2015 is a significant piece of legislation in India that addresses the allocation and auctioning of coal mines. Here's an overview of the key provisions of this Act:
+    
+            ·Allocation of Coal Mines: The Act provides for the allocation of coal mines through a transparent auction process. It aims to enhance transparency and efficiency in the allocation of coal resources.
+    
+            ·Vesting of Coal Mines: The Act vests the right, title, and interest of coal mines in the central government. This means that the government has ownership and control over the coal mines.
+    
+            ·Auction Method: The Act outlines the method for conducting auctions for coal mines. It sets the procedures for inviting bids, determining eligibility criteria for bidders, and conducting the auction.
+    
+            ·Allotment to Government Companies: The Act allows for the allotment of coal mines to government companies. However, this is subject to certain conditions and is typically done for specified end-uses like power generation, production of iron and steel, etc.
+    
+            ·Compensation for Prior Allottees: The Act provides for compensation to prior allottees of coal mines whose allocations were cancelled by the Supreme Court of India in 2014. This compensation is determined based on the intrinsic value of coal extracted.
+    
+            ·Power to Make Rules: The central government has the power to make rules for carrying out the provisions of this Act. These rules may cover various aspects related to the auction process, eligibility criteria, and other procedural matters.
+    
+            ·Amendment of Other Acts: The Act also provides for amendments to other laws like the Coal Mines (Nationalisation) Act, 1973, and the Mines and Minerals (Development and Regulation) Act, 1957, to align them with the provisions of this Act.
+    
+          Overall, the Coal Mines (Special Provisions) Act, 2015, aims to bring about transparency and efficiency in the allocation of coal mines, which is crucial for the energy sector and industrial development in India.
+
+    utter_colliery_control_order_key_features:
+      - text: |
+          The key objectives of the colliery control order is:
+            (1)Under the Colliery Control Order, 2000 the Central Government has no power to fix the prices of coal.
+            (2) Categorization of Coal:Central Government can prescribe classes, grades, and sizes.Coal Controller establishes procedures for sampling and analysis.Owners declare classes, grades, or sizes of coal.
+            (3) Submission of Returns and Information:Owners and coal-related businesses submit specified returns as directed by the Coal Controller.
+            (4) Directions to Regulate Coal Disposal:Central Government issues directions to regulate coal stock disposal.
+            (5) Power of the Coal Controller for Quality Surveillance:Coal Controller regulates loading, adjusts loading procedures, and inspects wagons.
+            (6) Power to Prohibit or Limit Mining:Central Government issues directions to prohibit or limit mining.
+            (7) Requirement of Prior Permission:Owners need prior written permission to open a coal mine or commence mining operations.
+            (8) Notice of Suspension or Closure:Owners notify the Coal Controller within thirty days if mining operations are suspended or closed.
+            (9) Power to Restrict Sub-Division of a Coal Mine:Owners require prior permission to sub-divide mining units.
+            (10) Power to Inspect Collieries:Coal Controller or authorized officers may inspect collieries.
+            (11) Delegation of Powers:Powers specified under clauses 6, 9, and 11 may be delegated to the Coal Controller.
+            (12) Power to Exempt:Central Government may exempt colliery owners or categories for justified reasons.
+
+    utter_mine_regulations_key_features:
+      - text: |
+          Key Objectives of Mine Regulations:
+            1.Worker Safety: Ensure the safety and health of workers employed in mines, including measures to prevent accidents, injuries, and occupational diseases.
+            2.Environmental Protection: Implement guidelines to minimize the environmental impact of mining activities, such as soil erosion, water pollution, and habitat disruption.
+            3.Resource Conservation: Establish rules for sustainable mining practices to conserve mineral resources and promote responsible extraction.
+            4.Community Welfare: Consider the well-being of communities located near mining areas, addressing issues related to noise, dust, and socio-economic impacts.
+            5.Compliance and Standards: Set and enforce industry-wide compliance with regulations, standards, and best practices to maintain the integrity of mining operations.
+
+    utter_mineral_concession_amendment_rules_2022:
+      - text: |
+          The Mineral Concession (Amendment) Rules, 2022, are a set of rules introduced by the Central Government of India to amend the existing Mineral Concession Rules, 1960. These amendments are made in exercise of the powers conferred by section 13 of the Mines and Minerals (Development and Regulation) Act, 1957.
+          ^[buttons:Key provisions of Mineral Concession Amendment Rules]^
+
+    utter_mineral_concession_amendment_rules_key_provisions:
+      - text: |
+          The key provisions of the Mineral Concession (Amendment) Rules, 2022, as outlined in the provided content, include the following:
+          Short Title and Commencement:
+            The rules are officially known as the Mineral Concession (Amendment) Rules, 2022.
+            They come into force on the date of their publication in the Official Gazette.
+          
+          Amendments to Rule 64A:
+            The amendment involves a change in the percentage related to certain provisions of rule 64A in the principal Mineral Concession Rules, 1960.
+            The amendment substitutes the words "twenty-four per cent" with "twelve per cent."
+            The words "the sixtieth day of" are omitted from the rule.
+          Insertion of Proviso in Rule 64B:
+            After the first proviso in rule 64B of the principal rules, a new proviso is inserted.
+            This proviso relates to the adjustment of royalty based on the final declaration of the grade of run-of-mine coal or lignite after sampling, or the final declaration of the National Coal Index of the relevant basket of coal grade or National Lignite Index on the date of dispatch or consumption. Adjustment will be the basis for payment of shortfall royalty to the lessor or refund of additional royalty to the lessee.
+          Substitution of Chapter XI - Penalty:
+            Chapter XI of the principal rules, titled "Penalty," is substituted with a new chapter.
+            The new chapter outlines penalties for contraventions of various rules specified in sub-rules and rules related to mineral concessions. The penalties include imprisonment for a term up to two years, fines up to five lakh rupees, or both. For continuing contraventions, additional fines may be imposed for each day of contravention after conviction.
+          These amendments are aimed at modifying certain provisions related to royalty, adjustments, and penalties in the Mineral Concession Rules, 1960, to align them with current requirements and regulations in the mining sector in India.
+
+    utter_mineral_laws_amendment_act_2020:
+      - text: |
+          The Mineral Laws (Amendment) Act, 2020 is an amendment to the existing mineral laws in India. The primary purpose of this amendment is to bring about changes in the Mines and Minerals (Development and Regulation) Act, 1957 and the Coal Mines (Special Provisions) Act, 2015. The amendment was enacted to facilitate a more transparent and efficient allocation of mineral resources in the country
+          ^[buttons:Key features of Mineral Laws Amendment Act]^
+
+    utter_mineral_laws_amendment_act_key_features:
+      - text: |
+          Here are some key aspects of the Mineral Laws (Amendment) Act, 2020:
+            Introduction of Composite Prospecting License-Cum-Mining Lease (PL-cum-ML):
+              The amendment introduced a new category of license called Composite Prospecting License-Cum-Mining Lease (PL-cum-ML). This provision aims to simplify the process by allowing seamless transition from prospecting to mining.
+            Removal of End-use Restrictions:
+              One of the significant changes brought about by the amendment is the removal of end-use restrictions for certain mines. Earlier, the allocation of mines was often linked to specific end-uses like power generation or steel production. The amendment allows greater flexibility in utilization.
+            Transfer of Statutory Clearances:
+              The amendment facilitates the transfer of statutory clearances from the previous lessee to the new lessee, minimizing delays in the operationalization of mines.
+            Auction of Mines with No Valid and Renewed Lease:
+              The Act allows the auction of mineral blocks even if the lease is not valid or renewed. This provision encourages the optimal utilization of mineral resources.
+            Reconnaissance Permits and Prospecting Licenses to be Merged:
+              The amendment provides for the merger of reconnaissance permits and prospecting licenses, streamlining the process for obtaining necessary permits.
+            Enhanced Penalties for Violations:
+              The amendment includes provisions for enhanced penalties in case of violations. This is aimed at ensuring compliance with the rules and regulations governing mining activities.
+                Amendment to Coal Mines (Special Provisions) Act, 2015:
+                The Act also amends the Coal Mines (Special Provisions) Act, 2015, to include similar provisions for the auction of coal blocks.
+                The Mineral Laws (Amendment) Act, 2020, is part of the government's efforts to boost transparency, efficiency, and investment in the mining sector. The changes are intended to attract more private investment, promote exploration and production, and reduce the regulatory burden on the mining industry.
+
+    utter_mineral_laws_amendment_ordinance_2020:
+      - text: |
+          The Mineral Laws (Amendment) Ordinance, 2020, was promulgated by the President of India on January 10, 2020. This ordinance introduced key amendments to the Mines and Minerals (Development and Regulation) Act, 1957 (MMDR Act) and the Coal Mines (Special Provisions) Act, 2015. The primary objective of the ordinance was to bring about structural reforms in the mining sector, promote ease of doing business, and enhance transparency and efficiency.
+          ^[buttons:Key points of Mineral Laws Amendment Ordinance]^
+
+    utter_mineral_laws_amendment_ordinance_key_points:
+      - text: |
+          Here are some key features of the Mineral Laws (Amendment) Ordinance, 2020:
+          Introduction of Auctions for Allocating Non-Coal Mines:
+            The ordinance allowed the auctioning of mineral blocks for prospecting-cum-mining operations. Earlier, only coal mines were auctioned, and other minerals were allocated through a different process.
+          No Requirement of Previous Approval for Transferring Mining Leases:
+            The ordinance removed the requirement for previous approval in the transfer of mining leases. This aimed at facilitating the ease of doing business and encouraging investment in the mining sector.
+          Extension of Leases for Captive Mines:
+            For captive mines (mines dedicated to a specific end-use industry), the ordinance allowed the extension of mining leases beyond the original period without going through the auction process.
+          Removal of Restrictions on End-use of Minerals:
+            The ordinance removed the restriction on the use of minerals extracted from the mines. Earlier, certain minerals were allocated with specific end-use conditions.
+          Introduction of Composite Prospecting Licenses-Cum-Mining Leases (PL-cum-ML):
+            The ordinance introduced the concept of Composite Prospecting Licenses-Cum-Mining Leases, allowing seamless transition from prospecting to mining in a single license.
+          Provision for Relaxation in Annual Cap on Iron Ore Production:
+            The ordinance provided the flexibility to the state governments to increase the annual production cap for iron ore mines. This was aimed at addressing the varying iron ore needs of different states.
+          Reconnaissance Permits and Prospecting Licenses to be Merged:
+            Similar to the later amendment act, the ordinance allowed the merging of reconnaissance permits and prospecting licenses, simplifying the regulatory process.
+          The Mineral Laws (Amendment) Ordinance, 2020, was later replaced by the Mineral Laws (Amendment) Act, 2020, which was passed by the Parliament during its budget session. The act essentially ratified and converted the provisions of the ordinance into law.
+
+    utter_coal_mines_provident_fund_miscellaneous_provisions_act_1948:
+      - text: |
+          Here are the key features and provisions of the Coal Mines Provident Fund and Miscellaneous Provisions Act, 1948:
+
+            1.Provident Fund Scheme:The act establishes a Coal Mines Provident Fund and a Family Pension Scheme for the benefit of employees working in coal mines. The provident fund is designed to accumulate a fund to secure the future of the employees.
+
+            2.Contributions:Both the employer and the employee make monthly contributions to the provident fund. The contributions are calculated as a percentage of the employee's basic wages, dearness allowance, and retaining allowance, if any.
+          
+            3.Contribution Rates:The act empowers the Central Government to determine the rates of contributions for both employers and employees. The rates are specified in the Coal Mines Provident Fund Scheme.
+
+            4.Administration:The administration and implementation of the Coal Mines Provident Fund Scheme are entrusted to a statutory body known as the Coal Mines Provident Fund Organization (CMPFO). The CMPFO is responsible for managing the funds and ensuring their proper utilization.
+
+            5.Members' Accounts:Each member of the provident fund scheme has an individual account maintained by the CMPFO. The account reflects the contributions made by the member and the interest accrued on those contributions.
+
+            6.Withdrawal and Advances:The act allows members to withdraw the accumulations in their provident fund accounts under specified circumstances, such as retirement, resignation, or permanent disability. Members can also avail of advances for certain purposes, like housing, marriage, education, etc.
+
+            7.Insurance Scheme:In addition to the provident fund, the act provides for the establishment of a Coal Mines Family Pension Scheme. This scheme offers a life insurance-cum-pension benefit to the families of deceased employees.
+
+            8.Adjudication and Appeals:The act establishes authorities for adjudicating disputes and hearing appeals related to the implementation of the provident fund and family pension schemes.
+
+            9.Penalties:Provisions are laid out for penalties against employers who fail to pay the contributions or comply with the provisions of the act.
+
+            10.Exemptions:The act provides the power to exempt certain classes of employees or employers from the operation of the provident fund and family pension schemes.
+
+          The Coal Mines Provident Fund and Miscellaneous Provisions Act, 1948, thus play a crucial role in ensuring financial security and social welfare for coal mine workers and their families in India.
+
+    utter_coal_grading_board_repeal_act_1959:
+      - text: |
+          The Coal Grading Board (Repeal) Act, 1959, is an act of the Indian Parliament that was enacted to repeal the Coal Grading Board Act, 1959. The Coal Grading Board Act, 1959, had established the Coal Grading Board for the purpose of grading coal according to its quality. The subsequent repeal was likely due to changes in the regulatory framework or administrative requirements.
+          ^[buttons:Key provisions of Coal Grading Board (Repeal) Act]^
+
+    utter_coal_grading_board_repeal_act_key_provisions:
+      - text: |
+          Here are the key points related to the Coal Grading Board (Repeal) Act, 1959:
+
+            1.Objective:The primary objective of the Coal Grading Board (Repeal) Act, 1959, was to repeal the Coal Grading Board Act, 1959, and dissolve the Coal Grading Board.
+
+            2.Repeal of Earlier Act:The act repealed the Coal Grading Board Act, 1959, in its entirety. Repealing an earlier act means that the provisions and regulations outlined in the original act are annulled and no longer have legal effect.
+
+            3.Dissolution of the Coal Grading Board:The Coal Grading Board, which was originally established for the purpose of grading coal, was dissolved as a result of the repeal. The dissolution could be attributed to changes in policies, administrative decisions, or the evolution of the coal industry's regulatory framework.
+
+            4.Transition and Consequences:The act might have included provisions addressing the transitional aspects of the repeal. This could involve the transfer of responsibilities, assets, or functions of the Coal Grading Board to other entities or regulatory bodies.
+
+            5.Effect on Grading of Coal:With the repeal of the Coal Grading Board Act, 1959, the specific mechanism for grading coal as outlined in that act ceased to be in force. Depending on subsequent legislative developments, coal grading responsibilities may have been assigned to other agencies or integrated into a different regulatory framework.
+
+            6.Legal Implications:Repealing an act removes the legal basis for the existence and operation of the entity or framework established by that act. The legal consequences of the repeal are outlined in the Coal Grading Board (Repeal) Act, 1959.
+
+          The Coal Grading Board (Repeal) Act, 1959, reflects a legislative decision to discontinue the Coal Grading Board and repeal the earlier act that brought it into existence. It highlights the dynamic nature of legislative frameworks, subject to periodic review and adjustments based on changing needs, policies, and administrative considerations in the coal sector.
+
+    utter_minerals_evidence_of_mineral_contents_rules_2015:
+      - text: |
+          The Minerals (Evidence of Mineral Contents) Rules, 2015 were enacted by the Central Government of India in accordance with the Mines and Minerals (Regulation and Development) Act, 1957. These rules, effective upon their publication in the Official Gazette, are designed to regulate the assessment of mineral contents at different stages of exploration for the purpose of granting prospecting licenses, mining leases, and composite licenses.
+
+          The rules apply to all minerals, excluding petroleum, natural gas, coal, lignite, sand for stowing, and certain minerals listed in the Mines and Minerals (Development and Regulation) Act, 1957, as well as minor minerals. Definitions and interpretations of key terms related to geological studies, exploration levels, mineral resources and reserves, economic viability, and modifying factors are provided in the rules.
+
+          The criteria for determining the existence of mineral contents are outlined based on the type of exploration and the type of license sought. Specific guidelines are provided for assessing mineral contents for the auction of mining leases, especially in cases of expired leases or those surrendered, determined, or lapsed.
+
+          In summary, these rules establish a comprehensive framework for the assessment of mineral contents during different stages of exploration, contributing to the regulatory structure governing the mining sector in India
+          ^[buttons:Minerals (Evidence of Mineral Contents) Amendment Rules, 2021]^
+
+    utter_national_mineral_exploration_trust_rules_2015:
+      - text: |
+          The National Mineral Exploration Trust Rules, 2015, were enacted by the Central Government of India on August 14, 2015, in exercise of powers conferred by the Mines and Minerals (Development and Regulation) Act, 1957. These rules aim to regulate the National Mineral Exploration Trust, established under section 9C of the Act, and govern its functions, structure, and financial aspects.
+
+          Key provisions include definitions of terms related to the Trust, such as "Chairperson, Executive Committee," "Chairperson, Governing Body," and others. The rules delineate the functions of the Governing Body and the Executive Committee, including the approval of annual plans and budgets. The rules establish the National Mineral Exploration Trust Fund, funded by contributions from mining lease and prospecting license holders, managed by the Executive Committee.
+
+          Additionally, the rules emphasize the importance of transparency, periodic reviews, and adherence to financial procedures. They specify the quorum for meetings, powers and responsibilities of the Member Secretary, and the audit of Trust accounts. The financial year of the Trust is set from April 1 to March 31.
+
+          In summary, these rules establish the framework for the National Mineral Exploration Trust's operations, focusing on exploration, financial management, and governance to promote the conservation and development of mineral resources in India.
+
+    utter_mineral_auction_amendment_rule_2017:
+      - text: |
+          In exercise of the powers conferred by section 13 of the Mines and Minerals (Development and Regulation) Act, 1957 (67 of 1957), the Central Government hereby makes the following rules to amend the Mineral (Auction) Rules, 2015
+
+          Application:
+            The amendment rules apply to cases where the preferred bidder has not been declared as of the publication date.
+            They do not apply to cases where the preferred bidder has been declared before the publication date.
+
+          Amendments to Rule 2:
+            Substitution in clause (m) of sub-rule (1) of Rule 2 regarding the computation of the Value of Estimated Resources.
+
+          Substitution of Rule 3:
+            Rule 3 is substituted, and it applies to all minerals except those specified as minor minerals, minerals in Part A of the First Schedule to the Act, and minerals in Part B of the First Schedule with a grade equal to or more than the threshold value under the Atomic Minerals Concession Rules, 2016.
+
+          Insertion in Rule 6:
+            Proviso inserted in sub-rule (4) of Rule 6, allowing the sale of a quantity of mineral equivalent to twenty-five percent of the total mineral excavated in the previous financial year, for which end use was specified.
+
+          Substitution in Rule 9:
+            Substitution of sub-rule (4) in Rule 9, outlining the auction process as an ascending forward online electronic auction with two rounds.
+
+          Insertion in Rule 10:
+            Provisos inserted in sub-rule (6) of Rule 10, specifying that no Mining Lease Deed shall be executed after three years from the date of the letter of intent, with a provision for a further period of two years under certain conditions.
+
+          Substitution in Rule 11:
+            Substitution in sub-rule (2) of Rule 11, changing "successful" to "preferred" and adding language related to the reassessed value of estimated resources, including newly discovered minerals.
+
+          Amendment in Rule 12:
+            Changes in sub-rule (1) of Rule 12, substituting "successful" with "preferred" and adding language regarding the value of newly discovered minerals in the mining lease deed.
+
+          Amendments in Rule 19:
+            Insertion and substitution in sub-rule (2) and (4) of Rule 19, specifying the value of estimated resources and the form of performance security.
+            These rules primarily address procedures and conditions related to mineral auctions, including computation of mineral values, auction processes, and execution of Mining Lease Deeds.
+          ^[buttons:Updated Mineral (Auction) Amendment Rules, 2020]^
+
+    utter_mineral_auction_amendment_rule_2020:
+      - text: |
+          The Mineral (Auction) Amendment Rules, 2020, introduced by the Ministry of Mines in India, aim to amend the existing Mineral (Auction) Rules, 2015. Here is a summary of the key amendments:
+
+          Title and Commencement:
+            The rules are officially called the Mineral (Auction) Amendment Rules, 2020, and they come into force on the date of their publication in the Official Gazette.
+          
+          Amendments to Rule 10:
+            Modification in sub-rule (3), clause (d):
+              Proviso added for mining leases auctioned under sub-sections (5) and (6) of section 8A of the Mines and Minerals (Development and Regulation) Act, 1957.
+              Specifies the applicability of the vesting order issued under rule 9A of the Minerals Concession Rules, 2016.
+            
+            Addition of sub-rules (6A) and (6B):
+              Sub-rule (6A) mandates State Government execution of mining lease within fifteen days from the later of the date of issue of the Letter of Intent, the commencement of the Mineral Auction (Amendment) Rules, 2020, or the expiry of the lease period of the previous lessee.
+              Sub-rule (6B) outlines consequences for non-compliance, including revocation of Letter of Intent, forfeiture of bid or performance security, and potential debarment from future auctions for three years.
+
+          The notification includes a note stating that the Minerals Auction Rules, 2015, were initially published on May 20, 2015, in the Gazette of India, Extraordinary, Part-II, Section 3, Sub-section (i).
+          These amendments primarily focus on setting specific timelines for lease execution, introducing consequences for non-compliance, and providing a mechanism for potential extensions under certain circumstances. The changes aim to streamline the auction process and ensure timely execution of mining leases.
+
+    utter_mineral_conservation_and_development_amendment_rules_2019:
+      - text: |
+          In exercise of the powers conferred by section 18 of the Mines and Minerals (Development and Regulation) Act, 1957 (67 of 1957), the Central Government hereby makes the following rules to amend the Mineral Conservation and Development Rules, 2017, namely Sub-rule (4) is substituted to empower the Regional Controller or the authorized officer of the Indian Bureau of Mines to suspend mining operations in mines that have not achieved at least a three-star rating.
+          The suspension is applicable if the three-star rating has not been attained within a period of four years from the 27th February 2017 or four years from the date of commencement of mining operations, whichever is later.
+          A show cause notice of forty-five days is required before the suspension, allowing the mine to qualify for a star rating.
+
+          Sub-rule (5) is amended to replace the previous requirement of a "four-star rating" with a new criterion of a "three-star rating," signaling a modification in the assessment criteria for mining operations.
+          In summary, the Mineral Conservation and Development (Amendment) Rules, 2019, specify the commencement date, introduce the authority to suspend mining operations for non-compliance with the star rating criteria, and adjust the star rating requirement from four stars to three stars in Rule 35 of the Mineral Conservation and Development Rules, 2017.
+
+    utter_minerals_other_than_atomic_hydro_carbon_rules_2020:
+      - text: |
+          Insertion of Rule 9A - Conditions for Issuance of Vesting Order:
+          A nodal officer, a Secretary-level officer nominated by the State Government, is appointed within one week of the notification.
+          The nodal officer collects valid rights, approvals, clearances, licenses, etc., from the previous lessee and issues a vesting order to the new lessee along with the Letter of Intent.
+          The vesting order is valid for two years from the date of the execution of the new lease deed or until obtaining all fresh approvals, clearances, licenses, permits, etc., whichever is earlier.
+          The new lessee is allowed to commence and continue mining operations on the land of the previous lessee for two years.
+          The new lessee must apply afresh for all necessary rights, approvals, clearances, licenses, etc., within 120 days from the date of the execution of the mining lease for further continuation of mining operations beyond two years.
+          The new lessee must continue mining operations as per the approved mining plan of the previous lessee until the new mining plan is approved.
+          
+          Insertion of Rule 12A - Additional Conditions for Commencement and Continuation of Production:
+            The holder of the mining lease, to whom the vesting order has been issued under section 8B of the Act, must maintain a specified level of production during the first two years from the date of the new lease.
+            The new lessee must ensure that annual production beyond two years from the date of execution of the new lease is equal to or more than the annual production by the previous lessee.
+
+          Substitution of Rule 18 - Auction of Expiring Mining Lease:
+            The State Government must conduct an auction of an expiring mining lease well in advance to prevent disruptions in mineral production.
+            The auction process should be completed at least six months before the impending expiry of a mining lease for a smooth transition from one lessee to another.
+          These amendments aim to facilitate a seamless transition of mining leases, ensure compliance with production levels, and streamline the auction process to prevent disruptions in mineral production.
+          ^[buttons:Minerals (Other than Atomic and Hydro Carbons Energy Minerals) Concession (Second Amendment) Rules 2021, Minerals (Other than Atomic and Hydro Carbons Energy Minerals Concession) (Third Amendment) Rules 2021]^
+    
+    utter_minerals_other_than_atomic_hydro_carbon_rules_2amendment_2021:
+      - text: |
+          In exercise of the powers conferred by section 13 of the Mines and Minerals (Development and Regulation) Act, 1957, the Central Government hereby makes the following rules further to amend the Minerals (Other than Atomic and Hydro Carbons Energy Minerals)Concession Rules, 2016
+          In the Minerals (Other than Atomic and Hydro Carbons Energy Minerals) Concession Rules, 2016, a proviso is added to rule 44, stating that for metals without a daily settlement price on the London Metal Exchange, the monthly average price from the London Metal Exchange for that metal shall be multiplied by the monthly average of the reference rate for the currency in which the price is obtained.
+
+    utter_minerals_other_than_atomic_hydro_carbon_rules_3amendment_2021:
+      - text: |
+          In exercise of the powers conferred by section 13 of the Mines and Minerals (Development and Regulation) Act, 1957, the Central Government hereby makes the following rules further to amend the Minerals (Other than Atomic and Hydro Carbons Energy Minerals) Concession Rules, 2016
+          In rule 12A of the Minerals (Other than Atomic and Hydro Carbons Energy Minerals) Concession Rules, 2016:
+
+          Quarterly Dispatch Shortfall Penalty (Sub-rule 1A):
+            If there is a shortfall in mineral dispatch below the minimum required, assessed quarterly:
+            - The lessee must pay the State Government an amount equal to the difference between:
+                ->Amounts payable under Auction Rules for the minimum required dispatch based on the weighted average grade.
+                ->Amounts paid under Auction Rules for the actually dispatched quantity in that quarter.
+            -Reconciliation is done annually, and any excess dispatch is adjusted against any shortfall payments made during the year.
+            -This payment is additional to any performance security appropriation for non-compliance with minimum production/dispatch.
+
+          Termination for Yearly Dispatch Shortfall (Sub-rule 1B):
+            If the lessee fails to maintain the minimum dispatch for the entire year, the State Government may terminate the lease after giving the lessee a chance to be heard.
+
+          Applicability Timeline (Sub-rule 1C):
+            Sub-rules 1A and 1B apply to leases executed before the Mineral (Other than Atomic and Hydro Carbons Energy Minerals) Concession (Third Amendment) Rules, 2021, after one year from the execution date or the amendment's commencement date, whichever is later.
+
+          Annual Production Dispatch Requirement (Sub-rule 2, Proviso):
+              The new lessee must ensure that at least eighty percent of the annual production is dispatched in the same year.
+
+    utter_updated_minerals_evidence_of_mineral_contents_amendment_rules_2021:
+      - text: |
+          In exercise of the powers conferred by section 13 of the Mines and Minerals (Development and Regulation) Act, 1957 (67 of 1957), the Central Government hereby makes the following rules to amend the Minerals (Evidence of Mineral Contents) Rules, 2015.
+
+          Amendments to Rule 5:
+            Addition of words in the marginal heading and opening portion to specify the purpose of establishing mineral contents for the grant of mining lease under clause (a) of sub-section (2) of section 5.
+            Insertion of a proviso after clause (b) regarding the deemed establishment of mineral contents for minerals specified in Schedule-II, subject to conditions.
+
+          Amendments to Rule 6:
+            Insertion of the word "terminated," after the word "surrendered" in the marginal heading.
+            Insertion of the word "terminated," after the word "surrendered" in clause (b).
+            Addition of a proviso stating that detailed reassessment of resources is not required in certain cases where the estimate of Mineral Resource for auction can be assessed based on available reports or plans, adjusted for minerals already produced.
+
+          Amendments to Rule 7:
+            Substitution of clause (a) in sub-rule (1) with new criteria for completing Reconnaissance Survey (G4) to estimate Reconnaissance Mineral Resource (334) or identifying mineral potentiality.
+            Substitution of sub-rule (2) to require the preparation of a Geological Study Report, including a Pre-Feasibility Study Report, on completion of prospecting operations.
+
+    utter_rules_under_cba:
+      - text: |
+          The rules under Coal Bearing Areas Act, 1957 (CBA) are:
+            1. Coal Bearing Areas (Acquisition & Development) Act, 1957 (20 of 1957)
+            2. THE COAL INDIA (REGULATION OF TRANSFERS AND VALIDATION) ACT, 2000
+          ^[buttons:Coal Bearing Areas (Acquisition & Development) Act 1957, The Coal India (Regulation of Transfers and Validation) Act 2000]^
+
+    utter_cba_acquisition_development_act:
+      - text: |
+          In exercise of the powers conferred by section 27 of the Coal Bearing Areas (Acquisition & Development) Act, 1957 (20 of 1957), the Central Government hereby makes the following rules
+
+          -The rules cover various aspects such as the short title and commencement, definitions of key terms, mode of service of notice or order, delivery of maps and documents, filing of claims for compensation, deposit of compensation, and appeals to the Central Government.
+
+          -The rules specify the procedure to be followed after the issue of notification under section 7, including the lodging of objections, the hearing process, and the summary nature of the proceedings before the competent authority.
+
+          - Included it has the procedure for appeals to the Central Government, including the form and content of the memorandum of appeal, the grounds for objection, and the rejection or admission of appeals based on compliance with the rules.
+
+          -It also details the procedure to be followed by the Tribunal, including the fixing of hearing dates, submission of statements by parties, and the consideration of documentary evidence.
+
+          -The rules provide comprehensive guidelines and procedures for the acquisition and development of coal-bearing areas, ensuring adherence to legal requirements and promoting fair and transparent processes.
+
+          -It also includes provisions for the mode of service of notice or order, including the methods of delivery, tendering, and acknowledgment of service.
+
+          -Additionally, the rules specify the timelines and procedures for filing claims for compensation and the deposit of compensation with the Tribunal.
+
+          -The rules also address the service of notices or orders against individuals, corporations, minors, or persons of unsound mind, ensuring compliance with legal requirements for service.
+
+          It emphasizes the need for documentation and verification of objections and outlines the summary nature of the proceedings before the competent authority.
+
+    utter_coal_india_regulation_of_transfers_validation:
+      - text: |
+          The Coal India (Regulation of Transfers and Validation) Act, 2000 is enacted to grant the Central Government the authority to direct the transfer of land, rights, or interests related to coal mines, coking coal mines, or coke oven plants from Coal India Limited or its subsidiary companies to other subsidiary companies. The Act validates certain transfers of such land or rights.
+
+          Key provisions include:
+
+            Short Title and Definitions:
+              ->The Act is titled the Coal India (Regulation of Transfers and Validation) Act, 2000.
+              ->Definitions include "Coal India" referring to the government company, and "subsidiary company" encompassing specific companies and any others incorporated under the Companies Act, 1956.
+
+            Power to Direct Transfer:
+              The Central Government is empowered to direct, through official notification, the transfer of land, rights, or interests in coal mines to subsidiary companies of Coal India, provided such companies comply with prescribed terms and conditions.
+            
+            Effect of Transfer:
+              Upon transfer, the subsidiary company receiving the land or rights is deemed the lessee of the coal mine or coking coal mine, as if a new mining lease had been granted under the Mineral Concession Rules, 1960.
+              The rights and liabilities of Coal India or the initial subsidiary company related to the coal mine are transferred to the recipient subsidiary company.
+
+            Validation of Transfers:
+              ->The Act validates the vesting of land, rights, or interests in coal mines, coking coal mines, or coke oven plants with subsidiary companies that were operating or in control of such entities before the Act's commencement.
+              ->This validation is retroactive, treating the vesting as valid and effective from the outset, as if directed by the Central Government under the Act.
+              ->Legal proceedings challenging the competence of the subsidiary company to operate or control the coal mine are barred on the grounds of the validated transfer.
+              ->In essence, the Act provides a legal framework for the transfer of assets among Coal India and its subsidiary companies, offering validation for historical transfers and ensuring the continuity of operations and control within the coal mining sector.
+
+    utter_fiery_seam:
+      - text: |
+          A fiery seam is a seam within a mine that has a fire or spontaneous heating. This can occur in underground workings or in open cast workings within the mine's precincts.
+          A fiery seam can also refer to a seam that emits large amounts of methane. A fiery mine is a colliery where a seam or multiple seams produce large amounts of methane and are prone to explosions. 
+          A seam is a stratum or bed of coal or other mineral. Coal seams are dark brown or black deposits of coal that are visible within layers of rock. These seams are underground and can be mined using deep mining or strip mining techniques.
+
+    utter_documents_for_mining_lease:
+      - text: |
+          Minerals concession for major minerals are granted under the provisions of MMDR,1957(Amendment,2015),MCR,1960 and MCDR,1988. For major minerals reconnaissance permit, prospecting license and mining lease are granted.
+
+          PROCEDURES:
+            An application for grant of mining lease/reconnaissance permit/prospecting license shall be made to the State Government in Form 1/FormA/FormB respectively as per rule 22(1) of Mineral Concession Rule,1960.
+            Application shall be accompanied by non-refundable fee calculated @ of Rs.5.00/sq km or part thereof payable in accordance with MCR, 1960 for reconnaissance permit. For prospecting license @of Rs.250.00/sq.km or part thereof and Rs.250.00 for each additional sq.km. For mining lease Rs.2500.00.
+            A valid clearance certificate in the form prescribed by State Government of payment of mining dues such as royalty, dead rent or surface rent payable under 22(3)(i)(d) of Mineral Concession Rule,1960.
+            In case if applicant does not hold and has not reconnaissance permit, it shall not be necessary for him to produce the said certificate but required to furnish an affidavit to the satisfaction of the State Government.
+            In case the applicant is a partnership firm or a private ltd. Company such certificate shall be furnished by all persons of partnership firm or as the case may be all members of Private Ltd. Company.
+            An affidavit stating that the applicants filed up to date income tax returns paid the income tax assessed on him and paid the income tax on the basis of self-assessment as provided in the income tax Act,1961(43 of 1961) as per rule 22(3)(i)(f) of MCR,1960 to be furnished.
+            An affidavit showing particulars of areas mineral wise in the State, which the applicant or any person jointly with him already holds under
+              (i) a reconnaissance permit
+              (ii) applied for but not granted
+              (iii) being applied simultaneously, as per rule 22(3)(i)(g),of MCR,1960 to be furnished.
+
+            A statement in writing that the applicant has, where land is not owned by him, obtained surface rights over the area or has obtained consent of the owner for starting mining operations as per rule 22(3)(i)(h) of MCR,1960.
+            Applicant shall attached cadastral map showing applied area and detailed statement of area applied for.
+            Memorandum and Articles of Association of Company/Deed of registration of company and deed of partnership of firm/company.
+            In respect of Minerals specified in schedule 5(1) of Mines and Minerals(Development & Regulation) Act,1957,prior to approval of Govt. of India has to be obtained before grant of mining lease as per the provision of section 5(1)of MMDR,1957.
+            As per the section 5(2) of MMDR,1957 no mining lease shall be granted unless the area applied for has been prospected earlier or existence of mineral contents has been established.
+            As per section 6(1)(b) of MMDR,1957,if the total area hold under mining lease together with the area applied for grant of lease exceeds 10.00sq.km.clearance from the Govt.of India.
+            If the area is not continuous or compact block relaxation of section 6 (1)(c) of MMDR,1957 from the State Govt. has to be obtained.
+            If the area applied for mining lease >5.00 and<50.00hects the clearance for the State environment impact assessment authority is necessary and for >50.00 hects clearance from the Ministry of Environment is necessary for using forest area for non-forest purposes.
+            If the mining lease applications is found to be in order, as per provisions contained in sub rule 4 of rule22 of MCR,1960,the precise area will be communicated to the applicant with instructions to submit a mining plan.
+            Before the execution of deed, an applicant shall deposit a sum of rupees as security deposit for (i) reconnaissance permit Rs.20.00/sq.km.or part thereof, for prospecting license Rs.250.00/sq.km.and Rs.10000.00 for mining lease.
+            Every mining lease holder shall have to prepare EIA and EMP for mining lease area more than 5 hect and obtain permission for Govt.of India as per prevalent rules
+            All mining lease holder shall pay in theDMFT as per rule 9B of MMDR,2015.
+actions:
+  - action_give_more_info
+
+
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

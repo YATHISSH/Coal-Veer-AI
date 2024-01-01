@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Include Recorder.js library in the head -->
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+</head>
+<body>
+
+<button id="toggleRecord">Start Recording</button>
+
+<script>
+    let recorder;
+    let isRecording = false;
+
+    document.getElementById('toggleRecord').addEventListener('click', async () => {
+        if (!isRecording) {
+            // Start Recording
+            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            recorder = new Recorder(stream);
+            recorder.record();
+            document.getElementById('toggleRecord').innerText = 'Stop Recording';
+        } else {
+            // Stop Recording and Send Audio
+            recorder.stop();
+            recorder.exportWAV((blob) => {
+                const formData = new FormData();
+                const fileName = generateRandomName() + '.wav';
+                console.log(fileName)
+                formData.append('audio', blob, fileName);
+
+                fetch('YOUR_FASTAPI_ENDPOINT', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+
+            // Reset UI
+            recorder.clear();
+            document.getElementById('toggleRecord').innerText = 'Start Recording';
+        }
+
+        // Toggle recording state
+        isRecording = !isRecording;
+    });
+
+    // Function to generate a random file name
+    function generateRandomName() {
+        return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+    }
+</script>
+</body>
+</html>

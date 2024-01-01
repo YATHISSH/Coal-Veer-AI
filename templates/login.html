@@ -1,0 +1,229 @@
+<div id="container" class="container">
+  <title>CoalBot Login</title>
+  <style>
+    /* Styling for pop-up box */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ccc;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 150%;
+      height: 150%;
+      overflow: auto;
+      z-index: 9999;
+      
+    }
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9998;
+    }
+  </style>
+
+  <div class="row">
+  
+    <link rel="stylesheet" href="static/login.css" />
+    <script src="static/login.js"></script>
+    
+    <div class="col align-items-center flex-col sign-up"> 
+      <div class="form-wrapper align-items-center">
+        <div class="form sign-up"> 
+          <div class="input-group">
+            <i class='bx bxs-user'></i>
+            <input type="text" placeholder="Username" name="usname" id="s_uname">
+          </div>
+          <div class="input-group">
+            <i class='bx bx-mail-send'></i>
+            <input type="email" placeholder="Email" name="email" id="s_email">
+          </div>
+          <div class="input-group">
+            <i class='bx bxs-lock-alt'></i>
+            <input type="password" placeholder="Password" name="passa"id="s_pass">
+          </div>
+          <div class="input-group">
+            <i class='bx bxs-lock-alt'></i>
+            <input type="password" placeholder="Confirm password" id="s_cpass">
+          </div>
+        
+          <button onclick="send1()"  id="signupBtn">
+            Sign up
+
+          </button>
+
+          <!-- Popup box -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <p>
+      <!-- Privacy Policy content -->
+      <h1>Privacy Policy for Coal Veer</h1>
+
+      <p>
+        
+        Thank you for choosing Coal Veer, an innovative service provided by the Ministry of Coal. This Privacy Policy is intended to inform you about the collection, use, and disclosure of personal information when you use our Coal Veer service.
+    
+        By using Coal Veer, you agree to the collection and use of information in accordance with this policy. Please read this Privacy Policy carefully to understand our practices regarding your personal data and how we handle it.
+      </p>
+    
+      <h2>Information Collection and Use</h2>
+    
+      <p>
+        Coal Veer may collect certain personally identifiable information that you provide voluntarily, such as your name, email address, contact number, and other details necessary for effective service delivery. We may also collect non-personally identifiable information, including but not limited to your device information, IP address, and usage patterns, for analytical and service improvement purposes.
+      </p>
+    
+      <h2>Use of Information</h2>
+    
+      <p>
+        The information collected by Coal Veer may be used to:
+        <ul>
+          <li>Provide, maintain, and improve our services.</li>
+          <li>Respond to your inquiries, requests, and concerns.</li>
+          <li>Customize and enhance your experience with Coal Veer.</li>
+          <li>Communicate important service-related announcements and updates.</li>
+        </ul>
+      </p>
+    
+      <h2>Data Sharing and Disclosure</h2>
+    
+      <p>
+        We do not sell, trade, or otherwise transfer your personal information to external parties without your consent, except as described in this Privacy Policy. We may share your information with authorized personnel within the Ministry of Coal or trusted third-party service providers who assist us in delivering Coal Veer services. We may also disclose information when required by law or to protect our rights, property, or safety.
+      </p>
+    
+      <h2>Security</h2>
+    
+      <p>
+        We take reasonable measures to safeguard the confidentiality and security of your personal information. However, please be aware that no method of transmission over the internet or electronic storage is completely secure. Therefore, while we strive to protect your data, we cannot guarantee its absolute security.
+      </p>
+    
+      <h2>Links to Government Resources</h2>
+    
+      <p>Coal Veer may contain links to government websites or services operated by the Ministry of Coal or other government entities. We encourage you to review the privacy policies of these resources for further information on how your data is handled.
+    
+      </p>
+    
+      <h2>Changes to This Privacy Policy</h2>
+    
+      <p>
+        This Privacy Policy may be updated periodically, and any changes will be effective immediately upon posting the revised policy on this page. We encourage you to review this Privacy Policy regularly for any updates.
+      </p>
+      <br><br>
+      <label>
+        <input type="checkbox" id="acceptTerms"> I accept the terms and conditions
+      </label>
+    </p>
+    <button id="submitBtn">Submit</button>
+  </div>
+
+          <p>
+            <span>
+              Already have an account?
+            </span>
+            <b onclick="toggle()" class="pointer">
+              Sign in here
+            </b>
+          </p>
+        </div>
+      </div>
+    
+    </div>
+    <div class="col align-items-center flex-col sign-in">
+      <div class="form-wrapper align-items-center">
+        <div class="form sign-in">
+          <div class="input-group">
+            <i class='bx bxs-user'></i>
+            <input type="email" placeholder="Email ID" id="l_uname">
+          </div>
+          <div class="input-group">
+            <i class='bx bxs-lock-alt'></i>
+            <input type="password" placeholder="Password" id="l_pas">
+          </div>
+          <button onclick="send2()">
+            Sign in
+          </button>
+          <p>
+            <b>
+              Forgot password?
+            </b>
+          </p>
+          <p>
+            <span>
+              Don't have an account?
+            </span>
+            <b onclick="toggle()" class="pointer" >
+              Sign up here
+            </b>
+          </p>
+        </div>
+      </div>
+      <div class="form-wrapper">
+  
+      </div>
+    </div>
+  
+  </div>
+  
+  <div class="row content-row">
+ 
+    <div class="col align-items-center flex-col">
+      <div class="text sign-in">
+        <h2>
+             Welcome to Coal VEER...🤖
+        </h2>
+
+      </div>
+      <div class="img sign-in">
+  
+      </div>
+    </div>
+   
+    <div class="col align-items-center flex-col">
+      <div class="img sign-up">
+      
+      </div>
+      <div class="text sign-up">
+        <h2>
+          Get Your Queries Resolved...
+        </h2>
+
+      </div>
+    </div>
+    
+  </div>
+  <script>
+    // Get elements
+    const signupBtn = document.getElementById('signupBtn');
+    const overlay = document.getElementById('overlay');
+    const popup = document.getElementById('popup');
+    const submitBtn = document.getElementById('submitBtn');
+    const acceptTerms = document.getElementById('acceptTerms');
+  
+    // Show pop-up when Signup button is clicked
+    signupBtn.addEventListener('click', function() {
+      overlay.style.display = 'block';
+      popup.style.display = 'block';
+    });
+  
+    // Close pop-up when Submit button is clicked and terms accepted
+    submitBtn.addEventListener('click', function() {
+      if (acceptTerms.checked) {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+        // You can perform any action here after accepting terms (e.g., submit form)
+      } else {
+        alert('Please accept the terms and conditions.');
+      }
+    });
+  </script>
+  
+  <script src="static/input.js"></script>
+  
+</div>

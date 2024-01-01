@@ -1,0 +1,409 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Express thanks
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: general ques
+  steps:
+  - intent: general_ques_coal
+  - action: utter_general_ques_coal
+
+- story: ask bot
+  steps:
+  - intent: ask_bot
+  - action: utter_ask_bot
+
+- story: first act
+  steps:
+  - intent: first_act
+  - action: utter_first_act
+
+- story: greet and ask about acts
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: acts
+  - action: utter_acts
+
+- story: greet and ask about rules
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: rules
+  - action: utter_rules
+
+- story: greet and ask about regulations
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: regulations
+  - action: utter_regulations
+
+- story: inquire about acts
+  steps:
+  - intent: acts
+  - action: utter_acts
+
+- story: inquire about rules
+  steps:
+  - intent: rules
+  - action: utter_rules
+
+- story: inquire about regulations
+  steps:
+  - intent: regulations
+  - action: utter_regulations
+
+- story: inquire about mines act 1952
+  steps:
+  - intent: mines_act_1952
+  - action: utter_mines_act_1952
+
+- story: inquire about mines and minerals act mmrd 1957
+  steps:
+  - intent: mines_and_minerals_act_mmdr_1957
+  - action: utter_mines_and_minerals_act_mmdr_1957
+
+- story: inquire about coal mines act special provision 2015
+  steps:
+  - intent: coal_mines_act_special_provision_2015
+  - action: utter_coal_mines_act_special_provision_2015
+
+- story: inquire about indian explosives act 1884
+  steps:
+  - intent: indian_explosives_act_1884
+  - action: utter_indian_explosives_act_1884
+
+- story: inquire about coal bearing areas 1957 cba
+  steps:
+  - intent: coal_bearing_areas_1957_cba
+  - action: utter_coal_bearing_areas_1957_cba
+
+- story: inquire about mine rules 1955
+  steps:
+  - intent: mine_rules_1955
+  - action: utter_mine_rules_1955
+
+- story: inquire about mine rescue rules 1985
+  steps:
+  - intent: mine_rescue_rules_1985
+  - action: utter_mine_rescue_rules_1985
+
+- story: inquire about mines vocational training rules 1966
+  steps:
+  - intent: mines_vocational_training_rules_1966
+  - action: utter_mines_vocational_training_rules_1966
+
+- story: inquire about mine creche rules 1966
+  steps:
+  - intent: mine_creche_rules_1966
+  - action: utter_mine_creche_rules_1966
+
+- story: inquire about colliery control order 2000
+  steps:
+  - intent: colliery_control_order_2000
+  - action: utter_colliery_control_order_2000
+
+- story: inquire about colliery control rules 2004
+  steps:
+  - intent: colliery_control_rules_2004
+  - action: utter_colliery_control_rules_2004
+
+- story: inquire about explosives rules 2008
+  steps:
+  - intent: the_explosives_rules_2008
+  - action: utter_the_explosives_rules_2008
+
+- story: inquire about coal mine regulations 2017
+  steps:
+  - intent: coal_mine_regulations_2017
+  - action: utter_coal_mine_regulations_2017
+
+- story: inquire about metalliferous mines regulation 1961
+  steps:
+  - intent: metalliferous_mines_regulation_1961
+  - action: utter_metalliferous_mines_regulation_1961
+
+- story: inquire about oil mines regulations 2017
+  steps:
+  - intent: oil_mines_regulations_2017
+  - action: utter_oil_mines_regulations_2017
+
+- story: inquire about 1957 acts
+  steps:
+  - intent: 1957_acts
+  - action: utter_1957_acts
+
+- story: inquire about 1966 rules
+  steps:
+  - intent: 1966_rules
+  - action: utter_1966_rules
+
+- story: inquire about 2017 regulations
+  steps:
+  - intent: 2017_regulations
+  - action: utter_2017_regulations
+
+- story: more info about mines act
+  steps:
+  - intent: mines_act_1952_more_info
+  - action: utter_mines_act_1952_more_info
+
+- story: user asks for more information
+  steps:
+  - intent: give_more_info
+  - action: utter_mines_act_1952_more_info
+
+- story: auction methodology
+  steps:
+  - intent: auction_methodology
+  - action: utter_auction_methodology
+
+- story: revenue share and incentives
+  steps:
+  - intent: revenue_share_and_incentives
+  - action: utter_revenue_share_and_incentives
+
+- story: upfront amount
+  steps:
+  - intent: upfront_amount
+  - action: utter_upfront_amount
+
+- story: coal utilization and flexibility
+  steps:
+  - intent: coal_utilization_and_flexibility
+  - action: utter_coal_utilization_and_flexibility
+
+- story: empowered committee
+  steps:
+  - intent: empowered_committee
+  - action: utter_empowered_committee
+
+- story: relinquishment and conditions
+  steps:
+  - intent: relinquishment_and_conditions
+  - action: utter_relinquishment_and_conditions
+
+- story: limits and modifications
+  steps:
+  - intent: limits_and_modifications
+  - action: utter_limits_and_modifications
+
+- story: national coal index
+  steps:
+  - intent: national_coal_index
+  - action: utter_national_coal_index
+
+- story: operational aspects and tenure
+  steps:
+  - intent: operational_aspects_and_tenure
+  - action: utter_operational_aspects_and_tenure
+
+- story: inquire about penal acts
+  steps:
+  - intent: penal_acts
+  - action: utter_penal_acts
+
+- story: key featues mines act 1952
+  steps:
+  - intent: mines_act_key_features
+  - action: utter_mines_act_key_features
+
+- story: why mines act implemented 1952
+  steps:
+  - intent: mines_act_why_implemented
+  - action: utter_mines_act_why_implemented
+
+- story: who implemented mines act 1952
+  steps:
+  - intent: mines_act_who_implemented
+  - action: utter_mines_act_who_implemented
+
+- story: rules under mines act 
+  steps:
+  - intent: rules_under_mines_act
+  - action: utter_rules_under_mines_act
+
+- story: regulations under mines act
+  steps:
+  - intent: reg_under_mines_act
+  - action: utter_reg_under_mines_act
+
+- story: key features mmdr act 1957
+  steps:
+  - intent: mmdr_key_features
+  - action: utter_mmdr_key_features
+
+- story: purpose of metalliferous mine reg 1961
+  steps:
+  - intent: metalliferous_mine_reg_purposes
+  - action: utter_metalliferous_mine_reg_purposes
+
+- story: key objectives of mine rules 1955
+  steps:
+  - intent: mine_rules_key_objectives
+  - action: utter_mine_rules_key_objectives
+
+- story: why implemented mine rules 1955
+  steps:
+  - intent: mine_rules_why_implemented
+  - action: utter_mine_rules_why_implemented
+
+- story: key obj coal mines special provisions 2015
+  steps:
+  - intent: coal_mines_special_provision_key_objectives
+  - action: utter_coal_mines_special_provision_key_objectives
+
+- story: key features colliery control order 2000
+  steps:
+  - intent: colliery_control_order_key_features
+  - action: utter_colliery_control_order_key_features
+
+- story: key features mine regulations 2017
+  steps:
+  - intent: mine_regulations_key_features
+  - action: utter_mine_regulations_key_features
+
+- story: mineral concession amendment rules
+  steps:
+  - intent: mineral_concession_amendment_rules_2022
+  - action: utter_mineral_concession_amendment_rules_2022
+
+- story: mineral concession amendment rules key provisions
+  steps:
+  - intent: mineral_concession_amendment_rules_key_provisions
+  - action: utter_mineral_concession_amendment_rules_key_provisions
+
+- story: mineral laws amendment act
+  steps:
+  - intent: mineral_laws_amendment_act_2020
+  - action: utter_mineral_laws_amendment_act_2020
+
+- story: key features of mineral laws amendment act
+  steps:
+  - intent: mineral_laws_amendment_act_key_features
+  - action: utter_mineral_laws_amendment_act_key_features
+
+- story: mineral laws amendment act
+  steps:
+  - intent: mineral_laws_amendment_act_2020
+  - action: utter_mineral_laws_amendment_act_2020
+
+- story: mineral laws amendment ordinance
+  steps:
+  - intent: mineral_laws_amendment_ordinance_2020
+  - action: utter_mineral_laws_amendment_ordinance_2020
+
+- story: mineral laws amendment ordinance key points
+  steps:
+  - intent: mineral_laws_amendment_ordinance_key_points
+  - action: utter_mineral_laws_amendment_ordinance_key_points
+
+- story: coal mines provident fund provisions act
+  steps:
+  - intent: coal_mines_provident_fund_miscellaneous_provisions_act_1948
+  - action: utter_coal_mines_provident_fund_miscellaneous_provisions_act_1948
+
+- story: coal grading board repeal act
+  steps:
+  - intent: coal_grading_board_repeal_act_1959
+  - action: utter_coal_grading_board_repeal_act_1959
+
+- story: coal grading board repeal act key provisions
+  steps:
+  - intent: coal_grading_board_repeal_act_key_provisions
+  - action: utter_coal_grading_board_repeal_act_key_provisions
+
+- story: latest rule
+  steps:
+  - intent: latest_rule
+  - action: utter_latest_rule
+
+- story: minerals evidence of mineral contents rules 2015
+  steps:
+  - intent: minerals_evidence_of_mineral_contents_rules_2015
+  - action: utter_minerals_evidence_of_mineral_contents_rules_2015
+
+- story: mineral exploration trust rules 2015
+  steps:
+  - intent: national_mineral_exploration_trust_rules_2015
+  - action: utter_national_mineral_exploration_trust_rules_2015
+
+- story: mineral auction amendment rule 2017
+  steps:
+  - intent: mineral_auction_amendment_rule_2017
+  - action: utter_mineral_auction_amendment_rule_2017
+
+- story: mineral auction amendment rule 2020
+  steps:
+  - intent: mineral_auction_amendment_rule_2020
+  - action: utter_mineral_auction_amendment_rule_2020
+
+- story: mineral conservation and development amendment rule 2019
+  steps:
+  - intent: mineral_conservation_and_development_amendment_rules_2019
+  - action: utter_mineral_conservation_and_development_amendment_rules_2019
+
+- story: minerals other than atomic hydro carbon rules 2020
+  steps:
+  - intent: minerals_other_than_atomic_hydro_carbon_rules_2020
+  - action: utter_minerals_other_than_atomic_hydro_carbon_rules_2020
+
+- story: minerals other than atmoic hydro carbon rules 2nd amendment 2021
+  steps:
+  - intent: minerals_other_than_atomic_hydro_carbon_rules_2amendment_2021
+  - action: utter_minerals_other_than_atomic_hydro_carbon_rules_2amendment_2021
+
+- story: minerals other than atmoci hydro carbon rules 2rd amendment 2021
+  steps:
+  - intent: minerals_other_than_atomic_hydro_carbon_rules_3amendment_2021
+  - action: utter_minerals_other_than_atomic_hydro_carbon_rules_3amendment_2021
+
+- story: rules under mmdr act
+  steps:
+  - intent: rules_under_mmdr_act
+  - action: utter_rules_under_mmdr_act
+
+- story: minerals evidence of mineral contents amendment rules 2021
+  steps:
+  - intent: updated_minerals_evidence_of_mineral_contents_amendment_rules_2021
+  - action: utter_updated_minerals_evidence_of_mineral_contents_amendment_rules_2021
+
+- story: rules under cba
+  steps:
+  - intent: rules_under_cba
+  - action: utter_rules_under_cba
+
+- story: cba acquisition development act
+  steps:
+  - intent: cba_acquisition_development_act
+  - action: utter_cba_acquisition_development_act
+
+- story: coal india regulation of transfers and validation
+  steps:
+  - intent: coal_india_regulation_of_transfers_validation
+  - action: utter_coal_india_regulation_of_transfers_validation
+
+- story: fiery seam
+  steps:
+  - intent: fiery_seam
+  - action: utter_fiery_seam
+
+- story: document for mining lease
+  steps:
+  - intent: documents_for_mining_lease
+  - action: utter_documents_for_mining_lease

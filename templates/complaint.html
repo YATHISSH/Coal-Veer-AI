@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal Bot Complaint Page</title>
+    <link rel="stylesheet" href="static/complaint.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <!-- Use the "mailto" scheme in the action attribute -->
+            <form id="complaintForm">
+                <h1>Post Your Complaint</h1><br><br>
+                <label class="form-label" for="email" style="text-align: center; font-size:large;">To: <em style="font-size: medium;">[Ministry of Coal]</em></label>
+                <input type="text" id="nameInput" style="border-radius: 50px;" placeholder="Your Name" /><br>
+                <label class="form-label" for="complaint" style="text-align: center; font-size:large;">Complaint Regarding:</label>
+                <select style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:medium; border-radius: 50px; padding: 8px; width: 270px; background-color: #eee; " class="form-input" id="complaint" name="complaint" required onchange="clearPlaceholder(this);">
+                    <option value="" disabled selected></option>
+                    <option value="CoalBot">CoalBot</option>
+                    <option value="Acts">Acts, Rules & Regulations</option>
+                    <option value="child">Child Labour</option>
+                </select><br>
+                <textarea id="complaintText" style="padding: 5%;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-color: rgb(133, 22, 118); border-width:2px;" type="text" cols="25" rows="5" placeholder="Type Your Complaints..."></textarea>
+                <br><button type="button" onclick="submitComplaint()" style="background-color:#1eb67f; background-image:linear-gradient(#1eb67f,#494242,#af0095);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Post Complaint</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#" method="post" enctype="text/plain">
+                <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Complaint form</h1>
+                <br><br>
+                <input type="text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;border-radius: 50px;" placeholder="Enter Your Name..." />
+                <input type="email" id="emailInput" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;border-radius: 50px;" placeholder="Enter Your Email..." />
+                <input type="text" id="mobileno" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;border-radius: 50px;" placeholder=" Enter Your Mobile No.." />
+                <br><button style="background-color:#1eb67f; background-image:linear-gradient(#1eb67f,#494242,#af0095);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome to our Coal bot Complaint Page</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, User!</h1>
+                    <p>Post Your Complaints Here and get your Queries Resolved</p>
+                    <button class="ghost"  id="signUp">Complaint Page</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitComplaint() {
+            // Get form inputs
+            const name = document.getElementById('nameInput').value;
+            const complaint = document.getElementById('complaint').value;
+			const email = document.getElementById('emailInput').value;
+            const complaintText = document.getElementById('complaintText').value;
+			const mobile=document.getElementById("mobileno").value;
+
+            // Construct mailto URL with dynamic content
+            const mailtoURL = `mailto:ministryofcoal@example.com?subject=${encodeURIComponent('Complaint')} - ${encodeURIComponent(complaint)}&body=${encodeURIComponent(`Name: ${name}%0D%0AEmail: ${email}%0D%0AMobile: ${mobile}%0D%0A%0D%0AComplaint:%0D%0A${complaintText.replace(/\n/g, '%0D%0A')}`)}`;
+
+
+            // Open default email client
+            window.location.href = mailtoURL;
+        }
+
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+        
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+        
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+</html>
